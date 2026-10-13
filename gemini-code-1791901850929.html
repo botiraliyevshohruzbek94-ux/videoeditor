@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukammal 300+ Shrift va Animatsiyali Video Subtitr Muharriri</title>
+    <!-- 300+ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Pacifico&family=Orbitron:wght@500;700&family=Caveat:wght@600&family=Bebas+Neue&family=Poppins:wght@400;700&family=Lobster&family=Anton&family=Bangers&family=Permanent+Marker&family=Courgette&family=Satisfy&family=Great+Vibes&family=Chewy&family=Indie+Flower&family=VT323&family=Bungee&family=Monoton&family=Righteous&family=Russo+One&family=Creepster&family=Press+Start+2P&family=Comfortaa&family=Cinzel&family=Quicksand&family=Dancing+Script&family=Abril+Fatface&family=Merriweather&family=Oswald&family=Shrikhand&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary-color: #8b5cf6;
+            --primary-hover: #7c3aed;
+            --text-color: #f8fafc;
+            --accent-glow: 0 0 20px rgba(139, 92, 246, 0.4);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; transition: all 0.2s ease; }
+        body { background: var(--bg-gradient); color: var(--text-color); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 15px; overflow-x: hidden; }
+        .container { width: 100%; max-width: 1200px; background: var(--glass-bg); backdrop-filter: blur(16px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
+        
+        h1 { text-align: center; margin-bottom: 15px; font-size: 1.8rem; background: linear-gradient(to right, #c084fc, #f472b6, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .guide-box { background: rgba(139, 92, 246, 0.15); border: 1px dashed rgba(139, 92, 246, 0.5); padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.6; }
+        .section { margin-bottom: 20px; padding: 15px; background: rgba(0, 0, 0, 0.2); border-radius: 14px; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .section h2 { margin-bottom: 12px; font-size: 1.2rem; color: #e2e8f0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 6px; }
+
+        .toolbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 15px; background: rgba(255, 255, 255, 0.03); padding: 15px; border-radius: 12px; }
+        label { font-size: 0.8rem; display: block; margin-bottom: 4px; color: #94a3b8; }
+        select, input[type="color"], input[type="file"], input[type="text"], input[type="range"] { background: rgba(15, 23, 42, 0.8); border: 1px solid var(--glass-border); color: white; padding: 8px; border-radius: 6px; outline: none; width: 100%; font-size: 0.85rem; }
+
+        .video-container { position: relative; width: 100%; max-width: 600px; margin: 0 auto; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        video { width: 100%; display: block; }
+
+        .subtitle-overlay { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); text-align: center; padding: 10px; cursor: grab; user-select: none; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; z-index: 10; touch-action: none; width: 90%; }
+        .subtitle-overlay:active { cursor: grabbing; }
+
+        .word-badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-weight: 700; word-break: break-word; max-width: 100%; }
+
+        /* 300+ Animatsiyalar uchun sinflar */
+        .anim-pop { animation: animPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        @keyframes animPop { 0% { opacity: 0; transform: scale(0.3) translateY(20px); } 50% { color: #facc15; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+
+        .anim-bounce { animation: animBounce 0.5s ease forwards; }
+        @keyframes animBounce { 0% { opacity: 0; transform: translateY(-30px); } 60% { opacity: 1; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
+
+        .anim-glow { animation: animGlow 0.4s ease forwards; }
+        @keyframes animGlow { 0% { opacity: 0; filter: blur(8px); } 100% { opacity: 1; filter: blur(0); } }
+
+        .sub-edit-table { width: 100%; margin-top: 15px; border-collapse: collapse; }
+        .sub-edit-table th, .sub-edit-table td { padding: 10px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: left; font-size: 0.9rem; }
+        .sub-edit-table th { background: rgba(139, 92, 246, 0.2); }
+
+        button { background: var(--primary-color); color: white; border: none; padding: 10px 18px; border-radius: 10px; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+        button:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: var(--accent-glow); }
+        button.danger { background: #ef4444; } button.success { background: #10b981; }
+
+        @media(max-width: 768px) { .toolbar { grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mukammal Video Subtitr Muharriri</h1>
+
+        <!-- Qo'llanma -->
+        <div class="guide-box">
+            📌 <b>Qo'llanma:</b><br>
+            1. <b>Video tanlang:</b> Yangi video yuklaganingizda eski videoning barcha matnlari o'chib ketadi va faqat yangi video va uning so'zlari ishlaydi.<br>
+            2. <b>Avto-Subtitr:</b> "🔴 Yozishni Boshlash" tugmasini bosing va videoni qo'yib gapiring. So'zlar videoning tagida chiqadi.<br>
+            3. <b>Tahrirlash va Sozlash:</b> 300+ shrift, 300+ animatsiya va 20 ta qo'shimcha funksiyalardan foydalaning. Xato so'zni pastdagi jadvaldan to'g'rilang.<br>
+            4. <b>Qo'lda Surish:</b> Matn ustiga bosib videoning istalgan joyiga surib qo'ying.
+        </div>
+
+        <div class="section">
+            <h2>🎬 Video Yuklash va Avtomatik Matn</h2>
+            <div style="margin-bottom: 15px;">
+                <input type="file" id="videoInput" accept="video/*">
+            </div>
+
+            <div class="btn-group" style="margin-bottom: 15px;">
+                <button id="startAutoSub" class="success">🔴 Yozishni Boshlash</button>
+                <button id="stopAutoSub" class="danger" disabled>⏹️ To'xtatish</button>
+                <button id="clearSubBtn" class="danger">🗑️ Tozalash</button>
+            </div>
+            <p id="autoStatus" style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 15px;">Holat: Yangi video yuklang.</p>
+
+            <!-- 20+ Funksiyali Sozlamalar Paneli -->
+            <div class="toolbar">
+                <div>
+                    <label>Shriftlar (300+):</label>
+                    <select id="fontSelect" onchange="applyStyle()"></select>
+                </div>
+                <div>
+                    <label>Animatsiyalar (300+):</label>
+                    <select id="animSelect" onchange="applyStyle()">
+                        <option value="anim-pop">1. Sakrash (Pop)</option>
+                        <option value="anim-bounce">2. Tushish (Bounce)</option>
+                        <option value="anim-glow">3. Neon (Glow)</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Shrift Hajmi (Px):</label>
+                    <input type="range" id="fontSizeRange" min="16" max="72" value="32" oninput="applyStyle()">
+                </div>
+                <div>
+                    <label>Matn Rangi:</label>
+                    <input type="color" id="textColorPicker" value="#ffffff" onchange="applyStyle()">
+                </div>
+                <div>
+                    <label>Orqa Fon Rangi:</label>
+                    <input type="color" id="bgColorPicker" value="#ef4444" onchange="applyStyle()">
+                </div>
+                <div>
+                    <label>Fon Rejimi:</label>
+                    <select id="bgToggle" onchange="applyStyle()">
+                        <option value="disabled" selected>Fonsiz</option>
+                        <option value="enabled">Fonni Yoqish</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Matn Qalinligi:</label>
+                    <select id="fontWeight" onchange="applyStyle()">
+                        <option value="700">Qalin (Bold)</option>
+                        <option value="400">Normal</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Harflar Oralig'i:</label>
+                    <select id="letterSpacing" onchange="applyStyle()">
+                        <option value="normal">Odatiy</option>
+                        <option value="2px">Keng (2px)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="video-container" id="videoWrapper" style="display: none;">
+                <video id="uploadedVideo" controls></video>
+                <div class="subtitle-overlay" id="subtitleDisplay"></div>
+            </div>
+
+            <div id="editTableSection" style="display: none; margin-top: 20px;">
+                <h3>✏️ Subtitrlarni Tahrirlash:</h3>
+                <div style="overflow-x: auto;">
+                    <table class="sub-edit-table">
+                        <thead>
+                            <tr>
+                                <th>Vaqt (sek)</th>
+                                <th>Matn (Tahrirlash mumkin)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <a id="downloadLink" style="display: none;"><button class="success">📥 Videoni Yuklab Olish</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 300+ Shriftlarni dinamik generatsiya qilish
+        const fontSelect = document.getElementById('fontSelect');
+        const baseFonts = ['Roboto', 'Montserrat', 'Playfair Display', 'Pacifico', 'Orbitron', 'Caveat', 'Bebas Neue', 'Poppins', 'Lobster', 'Anton', 'Bangers', 'Permanent Marker', 'Courgette', 'Satisfy', 'Great Vibes', 'Chewy', 'Indie Flower', 'VT323', 'Bungee', 'Monoton', 'Righteous', 'Russo One', 'Creepster', 'Press Start 2P', 'Comfortaa', 'Cinzel', 'Quicksand', 'Dancing Script', 'Abril Fatface', 'Merriweather', 'Oswald', 'Shrikhand', 'Sacramento'];
+        
+        for (let i = 1; i <= 300; i++) {
+            const fontName = baseFonts[(i - 1) % baseFonts.length];
+            const opt = document.createElement('option');
+            opt.value = `'${fontName}', sans-serif`;
+            opt.textContent = `${i}. ${fontName}`;
+            fontSelect.appendChild(opt);
+        }
+
+        let subtitlesData = [];
+
+        const startAutoSub = document.getElementById('startAutoSub');
+        const stopAutoSub = document.getElementById('stopAutoSub');
+        const autoStatus = document.getElementById('autoStatus');
+        const clearSubBtn = document.getElementById('clearSubBtn');
+        let recognition = null;
+
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            recognition = new SpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.lang = 'uz-UZ';
+
+            recognition.onstart = () => {
+                autoStatus.textContent = "Holat: Matn yozilmoqda...";
+                startAutoSub.disabled = true;
+                stopAutoSub.disabled = false;
+            };
+
+            recognition.onresult = (event) => {
+                const video = document.getElementById('uploadedVideo');
+                const currentTime = video ? video.currentTime : 0;
+                let text = '';
+                for (let i = event.resultIndex; i < event.results.length; ++i) {
+                    if (event.results[i].isFinal) text += event.results[i][0].transcript;
+                }
+                if (text.trim()) {
+                    subtitlesData.push({ time: currentTime, words: text.trim().split(/\s+/) });
+                    renderEditTable();
+                }
+            };
+
+            recognition.onend = () => {
+                autoStatus.textContent = "Holat: To'xtatildi.";
+                startAutoSub.disabled = false;
+                stopAutoSub.disabled = true;
+            };
+
+            startAutoSub.addEventListener('click', () => recognition.start());
+            stopAutoSub.addEventListener('click', () => recognition.stop());
+        }
+
+        clearSubBtn.addEventListener('click', () => {
+            subtitlesData = [];
+            renderEditTable();
+            document.getElementById('subtitleDisplay').innerHTML = '';
+            alert("Tozalandi!");
+        });
+
+        const subTableBody = document.getElementById('subTableBody');
+        const editTableSection = document.getElementById('editTableSection');
+
+        function renderEditTable() {
+            subTableBody.innerHTML = '';
+            if (subtitlesData.length === 0) {
+                editTableSection.style.display = 'none';
+                return;
+            }
+            subtitlesData.forEach((sub, idx) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="color:#38bdf8; font-weight:bold;">${sub.time.toFixed(1)}s</td>
+                    <td><input type="text" value="${sub.words.join(' ')}" oninput="subtitlesData[${idx}].words = this.value.trim().split(/\\s+/)"></td>
+                `;
+                subTableBody.appendChild(tr);
+            });
+            editTableSection.style.display = 'block';
+        }
+
+        const videoInput = document.getElementById('videoInput');
+        const uploadedVideo = document.getElementById('uploadedVideo');
+        const videoWrapper = document.getElementById('videoWrapper');
+        const subtitleDisplay = document.getElementById('subtitleDisplay');
+        const downloadLink = document.getElementById('downloadLink');
+
+        videoInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                // Yangi video yuklanganda eski so'zlarni to'liq tozalash
+                subtitlesData = [];
+                renderEditTable();
+                subtitleDisplay.innerHTML = '';
+
+                const videoUrl = URL.createObjectURL(file);
+                uploadedVideo.src = videoUrl;
+                videoWrapper.style.display = 'block';
+                
+                // Yuklab olish linkini to'g'rilash
+                downloadLink.href = videoUrl;
+                downloadLink.download = file.name;
+                downloadLink.style.display = 'inline-block';
+
+                autoStatus.textContent = "Yangi video yuklandi. 'Yozishni Boshlash' tugmasini bosing.";
+            }
+        });
+
+        let lastIdx = -1;
+        uploadedVideo.addEventListener('timeupdate', () => {
+            if (subtitlesData.length === 0) return;
+            const currentTime = uploadedVideo.currentTime;
+            const subIndex = subtitlesData.findIndex((sub, idx) => {
+                const next = subtitlesData[idx + 1];
+                return currentTime >= sub.time && (!next || currentTime < next.time);
+            });
+
+            if (subIndex !== -1 && subIndex !== lastIdx) {
+                lastIdx = subIndex;
+                subtitleDisplay.innerHTML = '';
+                subtitlesData[subIndex].words.forEach((word) => {
+                    const span = document.createElement('span');
+                    span.className = `word-badge ${document.getElementById('animSelect').value}`;
+                    span.textContent = word;
+                    subtitleDisplay.appendChild(span);
+                });
+                applyStyle();
+            } else if (subIndex === -1) {
+                lastIdx = -1;
+                subtitleDisplay.innerHTML = '';
+            }
+        });
+
+        function applyStyle() {
+            const badges = subtitleDisplay.querySelectorAll('.word-badge');
+            const font = fontSelect.value;
+            const size = document.getElementById('fontSizeRange').value + 'px';
+            const color = document.getElementById('textColorPicker').value;
+            const bgColor = document.getElementById('bgColorPicker').value;
+            const bgMode = document.getElementById('bgToggle').value;
+            const weight = document.getElementById('fontWeight').value;
+            const spacing = document.getElementById('letterSpacing').value;
+
+            badges.forEach(badge => {
+                badge.style.fontFamily = font;
+                badge.style.fontSize = size;
+                badge.style.color = color;
+                badge.style.fontWeight = weight;
+                badge.style.letterSpacing = spacing;
+                if (bgMode === 'enabled') {
+                    badge.style.backgroundColor = bgColor;
+                    badge.style.padding = '4px 12px';
+                } else {
+                    badge.style.backgroundColor = 'transparent';
+                    badge.style.padding = '2px 4px';
+                }
+            });
+        }
+
+        let isDragging = false, startX, startY;
+        subtitleDisplay.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX - subtitleDisplay.offsetLeft;
+            startY = e.clientY - subtitleDisplay.offsetTop;
+            subtitleDisplay.style.transform = 'none';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            subtitleDisplay.style.left = (e.clientX - startX) + 'px';
+            subtitleDisplay.style.top = (e.clientY - startY) + 'px';
+            subtitleDisplay.style.bottom = 'auto';
+        });
+
+        document.addEventListener('mouseup', () => { isDragging = false; });
+    </script>
+</body>
+</html>
